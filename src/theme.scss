@@ -1,0 +1,17 @@
+@mixin pc {
+  @media screen and (min-width: 415px) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+
+$BLACK_900: #292929;
+
+$TINT_900: #DE2424;
+
+$WHITE_900: #FFFFFF;

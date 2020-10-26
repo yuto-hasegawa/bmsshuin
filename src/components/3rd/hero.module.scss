@@ -1,0 +1,149 @@
+@import "../../theme.scss";
+
+.wrapper {
+  position: relative;
+  max-width: 1000px;
+
+  @include pc {
+    margin: 40px auto;
+    padding: 40px;
+    min-width: 600px;
+  }
+
+  @include sp {
+    margin: 40px auto;
+    padding: 32px 20px 0;
+  }
+
+  &::before {
+    content: "";
+    width: 64px;
+    height: 2px;
+    background: $WHITE_900;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  &::after {
+    @include pc {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 16px 16px;
+      border-color: transparent transparent $WHITE_900 transparent;
+      bottom: 0;
+      right: 20px;
+    }
+
+    @include sp {
+      display: none;
+    }
+  }
+
+  .tag {
+    @include pc {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      font-size: 18px;
+      transform: translate(-50%) rotate(-90deg);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @include sp {
+      display: none;
+    }
+  }
+
+  .twitter {
+    position: absolute;
+
+    @include pc {
+      top: 0;
+      right: 20px;
+    }
+
+    @include sp {
+      right: 20px;
+      top: -20px;
+    }
+  }
+}
+
+.frame {
+  display: grid;
+  margin: 0 auto;
+
+  @include pc {
+    width: 505px;
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+
+  @include sp {
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title"
+  "candidates venue";
+
+  .title_frame {
+    grid-area: title;
+  }
+}
+
+.title_frame {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  .inner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid $WHITE_900;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.title {
+  @include pc {
+    margin-bottom: 24px;
+    width: 70%;
+  }
+
+  @include sp {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    width: 65%;
+  }
+}
+
+.button {
+  border: 4px solid $WHITE_900;
+  text-align: center;
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none;
+  padding: 16px;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}

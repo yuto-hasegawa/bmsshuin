@@ -1,0 +1,32 @@
+@import "../theme.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 104px 20px 56px;
+
+  @include sp {
+    padding-top: 88px;
+  }
+
+  .image {
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
+.list {
+  @include pc {
+    width: 500px;
+  }
+
+  .item {
+    margin-bottom: 64px;
+  }
+}

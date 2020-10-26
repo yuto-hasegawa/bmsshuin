@@ -1,0 +1,20 @@
+@import "../../theme.scss";
+
+.terms {
+  @include pc {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+  }
+
+  @include sp {
+    dd {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.detail_box {
+  padding: 16px 32px 32px;
+  margin: 32px 0 48px;
+  background: rgba(255, 255, 255, 0.05);
+}

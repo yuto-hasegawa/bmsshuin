@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import "./theme.scss";
+
+body {
+  background-color: $BLACK_900;
+  color: $WHITE_900;
+  font-family: "Yu Mincho";
+  font-size: 16px;
+  line-height: 192%;
+  padding-bottom: 40px;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.digit {
+  font-family: "Barlow", sans-serif;
+}
+
+dd {
+  margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 72px;
+  font-family: "vdl-v7mincho", sans-serif;
+  font-weight: 800;
+}
+
+h3 {
+  position: relative;
+  font-size: 20px;
+  margin-top: 72px;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: $TINT_900;
+    position: absolute;
+    bottom: -6px;
+  }
+}
+
+h2+h3 {
+  margin-top: 0;
+}
+
+h4 {
+  &:not(:first-child) {
+    margin-top: 48px;
+  }
+
+  &::before {
+    content: "■";
+    margin-right: 4px;
+  }
+}
+
+a {
+  color: inherit;
+}
