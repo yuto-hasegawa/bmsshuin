@@ -29,8 +29,8 @@ const Hero = () => (
         CANDIDATES
       </a>
       <Link
-        to=""
-        className={classNames(styles.button, styles.disabled, "digit")}
+        to="https://venue.bmssearch.net/bmsshuin3"
+        className={classNames(styles.button, "digit")}
       >
         VENUE
       </Link>
