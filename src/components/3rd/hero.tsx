@@ -18,7 +18,7 @@ const Hero = () => (
           <Terms
             preEntryTerm="2020/12/01 Tue. - 12/31 Thu."
             entryTerm="2021/01/28 Thu. - 01/31 Sun."
-            impressionTerm="2021/02/01 Mon. -"
+            impressionTerm="2021/02/03 Wed. - 02/28 Sun."
           />
         </div>
       </div>
