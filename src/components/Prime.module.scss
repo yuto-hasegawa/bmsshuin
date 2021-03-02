@@ -1,0 +1,25 @@
+@import "../theme.scss";
+.result {
+  @include pc {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    column-gap: 32px;
+  }
+
+  dt {
+    font-size: 14px;
+  }
+
+  dd {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    @include sp {
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

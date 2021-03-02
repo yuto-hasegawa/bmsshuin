@@ -22,9 +22,15 @@ dd {
   margin: 0;
 }
 
+h1 {
+  font-size: 48px;
+  font-family: "vdl-v7mincho", sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
 h2 {
   font-size: 36px;
-  font-weight: bold;
   margin-top: 72px;
   font-family: "vdl-v7mincho", sans-serif;
   font-weight: 800;
@@ -46,7 +52,7 @@ h3 {
   }
 }
 
-h2+h3 {
+h2 + h3 {
   margin-top: 0;
 }
 

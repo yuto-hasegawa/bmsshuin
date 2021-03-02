@@ -22,6 +22,12 @@ const Hero = () => (
           />
         </div>
       </div>
+      <Link
+        to="/3rd/results"
+        className={classNames(styles.button, styles.results, "digit")}
+      >
+        RESULTS
+      </Link>
       <a
         href="https://venue.bmssearch.net/bmsshuin3/pre_entry"
         className={classNames(styles.button, "digit")}

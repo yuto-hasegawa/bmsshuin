@@ -1,0 +1,63 @@
+@import "../../theme.scss";
+
+.wrapper {
+  padding: 32px 20px 80px;
+}
+
+.logo {
+  width: 184px;
+  display: block;
+
+  img {
+    display: block;
+  }
+}
+
+.chart {
+  width: 100%;
+  display: block;
+}
+
+.prime {
+  border: 2px solid white;
+  padding: 24px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.team_table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    &.elected {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+  }
+
+  th {
+    font-size: 13px;
+    line-height: 1.1;
+    text-align: left;
+    font-family: sans-serif;
+    padding-bottom: 8px;
+  }
+  td {
+    padding: 12px 8px;
+  }
+
+  .election {
+    width: 32px;
+    .elected_sign {
+      width: 32px;
+      vertical-align: middle;
+    }
+  }
+
+  .title,
+  .artist {
+    word-break: break-all;
+  }
+}
