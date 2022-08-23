@@ -1,0 +1,22 @@
+@import "../../theme.scss";
+
+.wrapper {
+  padding: 40px 0;
+}
+
+.terms {
+  @include pc {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+  }
+
+  @include sp {
+    dd {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.detail_box {
+  padding: 16px 0;
+}

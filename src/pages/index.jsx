@@ -40,7 +40,7 @@ const IndexPage = () => (
         term="2017/07/20 - 2017/08/20"
         rulingParty="ピアノの党"
         primeMinister="ああああ"
-        to="https://qstol.info/events/BMS_Shuin"
+        to="/1st"
       />
     </Wrapper>
   </Layout>
